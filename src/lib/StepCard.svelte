@@ -81,22 +81,18 @@
   <Card.Footer
     class="flex space-x-2 text-muted-foreground justify-end p-3 pt-0"
   >
-    Need help <a class="ml-1 text-indigo-400" href="#">getting started</a>?
+    Need help <a class="ml-1 text-indigo-400" href="#_">getting started</a>?
   </Card.Footer>
 </Card.Root>
 
 <style lang="postcss">
   :global(.step-card .progress) {
-    & > div {
-      background: theme(colors.green.500);
+    > :global(div) {
+      @apply bg-green-500;
     }
     &:after {
       content: "Getting Started";
-      color: theme(colors.foreground);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      padding-left: 0.5rem;
+      @apply absolute top-1/2 -translate-y-1/2 pl-2 text-foreground;
     }
   }
 </style>
