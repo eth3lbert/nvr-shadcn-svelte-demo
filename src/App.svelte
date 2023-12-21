@@ -3,6 +3,7 @@
   import StepCard from '$lib/StepCard.svelte'
   import Menu from '$lib/Menu.svelte'
   import SummaryCard from '$lib/SummaryCard.svelte'
+  import LiveCard from '$lib/LiveCard.svelte'
 </script>
 
 <main class="h-screen">
@@ -12,8 +13,11 @@
       <InfoCard class="h-min"  />
       <StepCard class="h-min"  />
     </div>
-    <div class="w-full pr-4">
+    <div class="w-full pr-4 space-y-4">
       <SummaryCard />
+      <div class="">
+        <LiveCard />
+      </div>
     </div>
   </div>
 </main>
