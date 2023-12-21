@@ -4,6 +4,7 @@
   import Menu from '$lib/Menu.svelte'
   import SummaryCard from '$lib/SummaryCard.svelte'
   import LiveCard from '$lib/LiveCard.svelte'
+  import BookmarkCard from '$lib/BookmarkCard.svelte'
 </script>
 
 <main class="h-screen">
@@ -15,8 +16,11 @@
     </div>
     <div class="w-full pr-4 space-y-4">
       <SummaryCard />
-      <div class="">
-        <LiveCard />
+      <div class="flex space-x-4">
+        <LiveCard class="flex-1 w-auto" />
+        <div class="flex-none">
+          <BookmarkCard class="w-80" />
+        </div>
       </div>
     </div>
   </div>
