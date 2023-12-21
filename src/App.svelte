@@ -6,9 +6,13 @@
   import LiveCard from '$lib/LiveCard.svelte'
   import BookmarkCard from '$lib/BookmarkCard.svelte'
   import RecentEventLogsCard from '$lib/RecentEventLogsCard.svelte'
+  import Carousel from '$lib/FakeCarousel.svelte'
 </script>
 
-<main class="h-screen">
+<main class="flex flex-col w-full h-screen">
+  <div class="h-1/5">
+    <Carousel />
+  </div>
   <div class="flex h-full space-x-4">
     <Menu class="h-full"/>
     <div class="flex flex-col justify-between">
